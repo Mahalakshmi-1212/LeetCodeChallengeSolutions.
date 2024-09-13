@@ -1,0 +1,11 @@
+int missingNumber(int* nums, int numsSize) {
+    int i,sumofntl,sumofnums;
+    sumofntl=0;
+    sumofnums=0;
+    for(i=1;i<=numsSize;i++)//sum of firt n natural numbers
+        sumofntl=sumofntl+i;
+    for(i=0;i<numsSize;i++)//sum of given array
+        sumofnums=sumofnums+nums[i];
+    return sumofntl-sumofnums;
+    
+}
